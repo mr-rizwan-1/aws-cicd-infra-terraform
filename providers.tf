@@ -9,11 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "aws-cicd-infra-terraform"   # bucket name
+    bucket       = "aws-cicd-infra-terraform" # bucket name
     key          = "cicd-infra/terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true
-    use_lockfile = true                     # S3 native state locking
+    use_lockfile = true # S3 native state locking
   }
 }
 
